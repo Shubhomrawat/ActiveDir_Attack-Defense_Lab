@@ -57,8 +57,8 @@ This lab demonstrates a complete Active Directory attack lifecycle, simulating a
 
 **Screenshots:**
 
-![LLMNR Step 1](docs/screenshots/LLMNR-01.png)
-![LLMNR Step 2](docs/screenshots/LLMNR-02.png)
+![LLMNR Step 1](docs/screenshots/LLMNR-01.PNG)
+![LLMNR Step 2](docs/screenshots/LLMNR-02.PNG)
 
 **Key Outcomes:**
 - Captured NTLMv2 hashes using [Responder](https://github.com/lgandx/Responder)
@@ -76,8 +76,8 @@ sudo responder -I tun0 -dwP
 
 **Screenshots:**
 
-![SMB Relay Step 1](docs/screenshots/smbrelay-01.png)
-![SMB Relay Step 2](docs/screenshots/smbrelay-02.png)
+![SMB Relay Step 1](docs/screenshots/smbrelay-01.PNG)
+![SMB Relay Step 2](docs/screenshots/smbrelay-02.PNG)
 
 **Step 1 — Check for SMB Signing:**
 
@@ -105,8 +105,8 @@ ntlmrelayx.py -tf targets.txt -smb2support
 
 **Screenshots:**
 
-![Kerberoasting](docs/screenshots/Kerberoasting.png)
-![Krbtgt Hash](docs/screenshots/Krbtgt.png)
+![Kerberoasting](docs/screenshots/Kerberoasting.PNG)
+![Krbtgt Hash](docs/screenshots/Krbtgt.PNG)
 
 **Request Service Tickets:**
 
@@ -132,7 +132,7 @@ hashcat -m 13100 hashes.txt /usr/share/wordlists/rockyou.txt
 
 **Screenshot:**
 
-![Token Impersonation](docs/screenshots/token_imp.png)
+![Token Impersonation](docs/screenshots/token_imp.PNG)
 
 **Meterpreter Commands:**
 
@@ -152,7 +152,7 @@ meterpreter > impersonate_token "MARVEL\\fcastle"
 
 **Screenshot:**
 
-![Mimikatz](docs/screenshots/mimikatz.png)
+![Mimikatz](docs/screenshots/mimikatz.PNG)
 
 **Commands:**
 
@@ -171,8 +171,8 @@ Invoke-Mimikatz -Command "sekurlsa::logonpasswords"
 
 **Screenshots:**
 
-![Pass-the-Password](docs/screenshots/ptp-01.png)
-![Pass-the-Hash](docs/screenshots/ptp-02.png)
+![Pass-the-Password](docs/screenshots/ptp-01.PNG)
+![Pass-the-Hash](docs/screenshots/ptp-02.PNG)
 
 **Pass-the-Password:**
 
@@ -198,7 +198,7 @@ crackmapexec smb 10.0.0.0/24 -u administrator -H <NTLM_HASH> --local-auth
 
 **Screenshot:**
 
-![GPP Attack](docs/screenshots/PTH.png)
+![GPP Attack](docs/screenshots/PTH.PNG)
 
 **Decrypt the `cpassword` field:**
 
