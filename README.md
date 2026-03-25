@@ -41,7 +41,6 @@ This lab demonstrates a complete Active Directory attack lifecycle, simulating a
 
 ## Lab Environment
 
-> *(Add your lab setup here — e.g., VMs used, network topology, OS versions, tools installed)*
 
 - **Attacker Machine:** Kali Linux
 - **Domain Controller:** Windows Server 20XX — `MARVEL.local`
